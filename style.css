@@ -95,7 +95,7 @@ body {
     background-color: #4b4b4b;
 }
 .priority-color {
-    height: 3rem;
+    height: 4rem;
     width: 55%;
 }
 .border {
@@ -144,7 +144,49 @@ body {
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 375px) {
+    .modal-cont {
+        height: 45vh;
+        width: 75vw;
+        top: calc( ( 100vh - 55vh ) / 2 );
+        left: calc( ( 100vw - 75vw ) / 2 );
+        flex-direction: column;
+    }
+
+    .ticket-cont {
+        height: 30vh;
+        width: 32vh;
+    }
+
+    .textarea-cont {
+        width: 100%;
+        height: 75%;
+    }
+    .priority-colors-cont {
+        flex-direction: row;
+        width: 100%;
+        height: 25%;
+    }
+    .priority-color {
+        width: 15%;
+        height: 40%;
+    }
+    .toolbox-cont > * {
+        height: 7vh;
+        margin-left: 1.5rem;
+        border-radius: 2px;
+    }
+    .toolbox-priority-cont {
+        width: 45vw;
+    }
+
+    .color {
+        height: 40%;
+        width: 17%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 425px) {
     .modal-cont {
         width: 75vw;
         height: 55vh;
@@ -162,10 +204,11 @@ body {
         height: 25%;
     }
     .priority-color {
-        width: 17%;
+        width: 15%;
+        height: 50%;
     }
     .toolbox-cont > * {
-        margin-left: 2rem;
+        margin-left: 2.5rem;
         border-radius: 2px;
     }
 }
